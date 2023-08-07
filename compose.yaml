@@ -4,8 +4,8 @@ services:
     image: 'postgres:latest'
     environment:
       POSTGRES_DB: restapi
-      POSTGRES_PASSWORD: mawuli302
-      POSTGRES_USER: mawuli
+      POSTGRES_PASSWORD: ${PASSWORD}
+      POSTGRES_USER: ${USER}
       PGDATA: /data/postgres
     ports:
       - "5222:5432"
